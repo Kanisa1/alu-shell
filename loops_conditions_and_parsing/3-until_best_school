@@ -9,7 +9,7 @@ until [ $counter -eq 10 ]
 
 do
 
-    echo "Best School."
+    echo "Best School"
 
  
 
