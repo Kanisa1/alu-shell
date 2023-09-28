@@ -1,34 +1,20 @@
- #!/usr/bin/env bash
-#displays numbers from 1 to 100.
+#!/usr/bin/env bash
+# displays Best School 10 times.
 
-for ((i=1; i<=100; i++))
-
+COUNTER=1
+while [ $COUNTER -lt 101 ]
 do
-
-   
-
-    if ((i % 3 == 0)) && ((i % 5 == 0)); then
-
+    if [ $((COUNTER%15)) = 0 ]
+    then
         echo "FizzBuzz"
-
-    
-
-    elif ((i % 3 == 0)); then
-
+    elif [ $((COUNTER%3)) = 0 ]
+    then
         echo "Fizz"
-
-   
-
-    elif ((i % 5 == 0)); then
-
+    elif [ $((COUNTER%5)) = 0 ]
+    then
         echo "Buzz"
-
-  
-
     else
-
-        echo "$i"
-
+        echo "$COUNTER"
     fi
-
+    let COUNTER+=1
 done
