@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# change this comment Get and display the script's P.I.D. done by Chriss
+# The script that displays its own PID.
+
 echo "$$\n"
