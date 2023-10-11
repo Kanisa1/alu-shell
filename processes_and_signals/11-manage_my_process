@@ -22,6 +22,6 @@ case "$1" in
   stop)  stop;;                                   
   restart) restart;;                              
   *) echo "Usage: manage_my_process {start|stop|r\
-estart}"  
-    ;;                                           
-esac
+estart}"                                                                                         
+      ;;
+esac                    
